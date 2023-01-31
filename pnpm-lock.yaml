@@ -1,18 +1,50 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fullcalendar/core': ^6.1.1
+  '@fullcalendar/daygrid': ^6.1.1
+  '@fullcalendar/react': ^6.1.2
   '@next/font': 13.1.6
   next: 13.1.6
   react: 18.2.0
   react-dom: 18.2.0
 
 dependencies:
+  '@fullcalendar/core': 6.1.1
+  '@fullcalendar/daygrid': 6.1.1_@fullcalendar+core@6.1.1
+  '@fullcalendar/react': 6.1.2_cxozk5bw3nqkfncynvh2sss6vu
   '@next/font': 13.1.6
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
 packages:
+
+  /@fullcalendar/core/6.1.1:
+    resolution: {integrity: sha512-im5Dbgi/d7Q8DEUFuLaInL/TG+CrRH+zePq58LrKyFFoJKkx2CP+OS29ijVBnUiGyzCWtZ9lMIzLmWDzIMnJ0A==}
+    dependencies:
+      preact: 10.11.3
+    dev: false
+
+  /@fullcalendar/daygrid/6.1.1_@fullcalendar+core@6.1.1:
+    resolution: {integrity: sha512-/yIrN3IZSdob/UvAaPqWzBqyaQf3+DdcGG7xocVpmt2MudFbTpstF+ffPdBAQWqoWoB18Q92s6fn9teva5nDwA==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.1
+    dependencies:
+      '@fullcalendar/core': 6.1.1
+    dev: false
+
+  /@fullcalendar/react/6.1.2_cxozk5bw3nqkfncynvh2sss6vu:
+    resolution: {integrity: sha512-GNKKOGQESVStj66vCd5Qd3fcQYy5ItqzmBVOWxpp5fj/eyhUf2in6Mwox+PeoLPjtroOFlrNvB5aSZDPKManew==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.1
+      react: ^16.7.0 || ^17 || ^18
+      react-dom: ^16.7.0 || ^17 || ^18
+    dependencies:
+      '@fullcalendar/core': 6.1.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /@next/env/13.1.6:
     resolution: {integrity: sha512-s+W9Fdqh5MFk6ECrbnVmmAOwxKQuhGMT7xXHrkYIBMBcTiOqNWhv5KbJIboKR5STXxNXl32hllnvKaffzFaWQg==}
@@ -225,6 +257,10 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /preact/10.11.3:
+    resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==}
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
